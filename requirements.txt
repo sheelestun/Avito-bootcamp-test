@@ -1,0 +1,15 @@
+# Runtime: Python 3.9, Windows, NVIDIA driver with CUDA 12.6 support.
+# Paddle GPU wheels are hosted in the official PaddlePaddle index below.
+--extra-index-url https://www.paddlepaddle.org.cn/packages/stable/cu126/
+
+paddlepaddle-gpu==3.3.0
+numpy==1.26.4
+opencv-python-headless==4.10.0.84
+PyYAML==6.0.2
+Pillow==11.3.0
+ipykernel==6.31.0
+
+# Paddle 3.3.0 currently installs cuDNN 9.5 from its package metadata, while
+# the Windows binary reports that it was compiled with cuDNN 9.9. Apply the
+# compatible runtime after installing this file:
+# py -3.9 -m pip install --no-deps --upgrade nvidia-cudnn-cu12==9.9.0.52

@@ -1,0 +1,28 @@
+# Local Python environment
+.venv/
+.gpu-wheel/
+__pycache__/
+*.py[cod]
+
+# Local model and application caches
+.cache/
+
+# Dataset and generated predictions
+dataset/
+outputs/
+submission*.csv
+
+# Previous local project snapshot
+.archive/
+
+# Notebook and test caches
+.ipynb_checkpoints/
+.pytest_cache/
+.pytest-tmp/
+pytest-cache-files-*/
+
+# IDE and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
